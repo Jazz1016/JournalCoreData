@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1D7126263775AC00FF4AB3 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D7125263775AC00FF4AB3 /* DateFormatter.swift */; };
+		0D77E658263758580075138C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D77E657263758580075138C /* CoreDataStack.swift */; };
+		0D77E65B2637591A0075138C /* Entry+Convienience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D77E65A2637591A0075138C /* Entry+Convienience.swift */; };
+		0D77E66026375AF60075138C /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D77E65F26375AF60075138C /* EntryController.swift */; };
+		0D77E66626375F120075138C /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D77E66526375F120075138C /* EntryListTableViewController.swift */; };
+		0D77E66B263761F00075138C /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D77E66A263761F00075138C /* EntryDetailViewController.swift */; };
 		7EDB75BD25B5C81B00B80B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB75BC25B5C81B00B80B7D /* AppDelegate.swift */; };
 		7EDB75BF25B5C81B00B80B7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB75BE25B5C81B00B80B7D /* SceneDelegate.swift */; };
 		7EDB75C425B5C81B00B80B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB75C225B5C81B00B80B7D /* Main.storyboard */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D1D7125263775AC00FF4AB3 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		0D77E657263758580075138C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0D77E65A2637591A0075138C /* Entry+Convienience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convienience.swift"; sourceTree = "<group>"; };
+		0D77E65F26375AF60075138C /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		0D77E66526375F120075138C /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		0D77E66A263761F00075138C /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		7EDB75B925B5C81B00B80B7D /* JournalCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDB75BC25B5C81B00B80B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDB75BE25B5C81B00B80B7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D1D71242637759100FF4AB3 /* Helper and Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0D1D7125263775AC00FF4AB3 /* DateFormatter.swift */,
+			);
+			path = "Helper and Extension";
+			sourceTree = "<group>";
+		};
+		0D77E65D26375ADF0075138C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D77E66426375EDF0075138C /* ViewControllers */,
+				0D77E65E26375AE50075138C /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D77E65E26375AE50075138C /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D77E65F26375AF60075138C /* EntryController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		0D77E66426375EDF0075138C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D77E66526375F120075138C /* EntryListTableViewController.swift */,
+				0D77E66A263761F00075138C /* EntryDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		7EDB75B025B5C81B00B80B7D = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +102,8 @@
 		7EDB75BB25B5C81B00B80B7D /* JournalCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				0D1D71242637759100FF4AB3 /* Helper and Extension */,
+				0D77E65D26375ADF0075138C /* Controllers */,
 				7EDB75D425B5C82500B80B7D /* Resources */,
 				7EDB75D825B5C83B00B80B7D /* Views */,
 				7EDB75D925B5C84700B80B7D /* CoreData */,
@@ -95,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				7EDB75C525B5C81B00B80B7D /* JournalCoreData.xcdatamodeld */,
+				0D77E657263758580075138C /* CoreDataStack.swift */,
+				0D77E65A2637591A0075138C /* Entry+Convienience.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -169,9 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1D7126263775AC00FF4AB3 /* DateFormatter.swift in Sources */,
+				0D77E65B2637591A0075138C /* Entry+Convienience.swift in Sources */,
+				0D77E66026375AF60075138C /* EntryController.swift in Sources */,
+				0D77E66626375F120075138C /* EntryListTableViewController.swift in Sources */,
 				7EDB75BD25B5C81B00B80B7D /* AppDelegate.swift in Sources */,
 				7EDB75C725B5C81B00B80B7D /* JournalCoreData.xcdatamodeld in Sources */,
 				7EDB75BF25B5C81B00B80B7D /* SceneDelegate.swift in Sources */,
+				0D77E66B263761F00075138C /* EntryDetailViewController.swift in Sources */,
+				0D77E658263758580075138C /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
